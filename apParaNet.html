@@ -13,6 +13,7 @@
             <li><a href="#">4º Semestre</a></li>
         </ul>
         <h1>Ciência da Computação</h1>
+        <!-- Início da história da Web, net e HTML -->
         <h2>Aplicações para internet</h2>
 
         <p>
@@ -118,6 +119,146 @@
             Assim como o  Web Hypertext Application Technology Working Group (WHATWG), que é um grupo de pessoas e empresas interessa-<br>das no 
             desenvolvimento do HTML e APIs, esse grupo foi fundado por representantes da Apple, Mozilla e Opera em 2004, depois de re-<br>alizarem
             um workshop com a W3C.
+        </p>
+        <!-- Fim da História -->
+        <h2>
+            TAG HTML e Atributos de TAG
+        </h2>
+        <p>
+            TAG em HTML são comandos que serão utilizados para interpretar alguma ação no documento HTML, como uma inserção de imagem, <br>vídeo
+            áudio, parágrafo, título, etc.
+            <br>
+            Tudo que diz respeito a como o site será estruturado será referente as TAG do HTML, é ela que forma o "esquelo ou planta" de um
+            website.
+            <br>
+            As TAG são declaradas da seguinte maneira:
+            <br><br>
+            &ltp&gtAqui representa um parágrafo&lt/p&gt
+            <br><br>
+            As TAG são declaradas dentro de um sinal de maior e menor "&lt&gt", e normalmente são fechadas com uma barra invertida "&lt/&gt",
+            <br>mas também há tag que não são fechadas, como o &ltbr&gt e o &ltimg&gt. O que diferencia uma tag com fechamento com uma que<br> 
+            não tem fechamento e o conteúdo, TAG que conterá conteúdo, normalmente tem fechamento, já as que não há conteúdo não conterá<br>
+            um fechamento, como por exemplo o parágrafo, dentro da TAG será inserido uma texto, já a tag br e a img não conterão conteúdos,<br>
+            porém terá outra função como quebrar linha ou buscar uma imagem, seja ele local ou através de uma URL. 
+            <br>
+            <p>
+                As TAG poderão definir um elemento, como por exemplo imagem, toda imagem terá uma largura ou altura, que no documento ficará <br>
+                parecendo um quadrado, esses tamanhos dos elemento poderão posteriormente ser alterados de acordo com o esperado resultado final<br>
+                que o site terá. O que e importante saber de príncipio é que há TAG que quando definidas terá um comportamente diferente da outra <br>
+                em relação ao espaço, poderá ter TAG que ocupará uma área horizontal completa e terão TAG que ocuparão apenas o espaço necessário para<br>
+                inserir o elemento.
+                <br>
+                São os casos dos elementos block e inline, sem o block o que contél largura e altura e o inline o que usa somente o espaço necessário.    
+                </br>
+            </p>
+            <p>
+                Atributos são informações que passamos na TAG para que ela se comporte da maneira esperada. Existem atributos globais (que funcionam em<br>
+                todas as TAG) e específicos (que são direcionados para cada TAG, através de especificação).
+                <br>
+                Os Atributos possuem nome e um valor, que normalmente são usados frequentemente e também há outros mais dificeis de serem usados.
+                <br>
+                São declarados da seguinte maneira:
+                <br><br>
+                &ltimg src="valor do atributo"&gt
+                <br><br>
+                No caso src=" " seria o atributo e o valor seria colocado dentro das aspas, que normalmente se refere a um caminho ou quantidade. Há vários<br>
+                tipos de atributos além do src=" ".
+            </p>
+            <p>
+                No HTML há uma estrutura básica que consiste em todo arquivo HTML, normalmente já vem até feita nos editores de texto mais modernos.
+                <br><br>
+                &lt!DOCTYPE html&gt<br>
+                &lthtml lang="pt-br"&gt<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&lthead&gt<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltmeta charset="utf-8"/&gt<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttitle">Título da página&lt/title&gt<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&lt/head&gt<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&ltbody&gt<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp…..conteúdo da página<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&lt/body&gt<br>
+                    &lt/html&gt<br>
+            </p>
+            <p>
+                Há também uma confusão na hora de codificar arquivos HTML, pois pode haver a necessidade de utilizar caracteres que são utilizados como códigos<br>
+                para esses casos utiliza-se codificações para substituir os caracteres especiais, sendo alguns deles:
+                <br><br>
+                quot que é utilizado para representar aspas ";
+                <br>
+                apos que é utilizado para representar Apóstrofe '';
+                <br>
+                amp que é utilizado para representar &quotE&quot comercial;
+                <br>
+                lt que é utilizado para representar o sinal de menor que;
+                <br>
+                gt que é utilizado para representar o sinal de maior que;
+                <br>
+                nbsp que é utilizado para representar um pequeno espaço no texto.
+                <br><br>
+                Enfatizando que todos eles tem que serem antecedidos de um e comercial (&amp), senão não funcionam.
+                <br><br>
+                Todo código HTML pode ser válidado pelo W3C no link:  https://validator.w3.org/
+            </p>
+            <h3>TAG e suas funções</h3>
+            <p>
+                <h4>&lt!DOCTYPE html&gt</h4>
+                <p>
+                    Serve para indicar que o documento HTML estará utilizando a versão HTML 5.
+                </p>
+                <h4>&lthtml&gt</h4>
+                <p>
+                    É utilizada para iniciar um documento HTML, normalmente vem com o atributo lang, que servirá para indicar o idioma do documento.
+                </p>
+                <h4>&lthead&gt</h4>
+                <p>
+                    Indicará o cabeçalho do do site, e se encontra dentro da TAG &lthtml&gt.
+                </p>
+                <h4>&lttitle&gt</h4>
+                <p>
+                    Serve para colocar o título do site, normalmente utilizada já dentro do cabeçalho do site.
+                </p>
+                <h4>&ltmeta&gt</h4>
+                <p>
+                    Serve para definir informações do documento, como o autor, palavras-chave, jogo de caracteres, etc. Utilizada no cabeçalho.
+                    <br>
+                    Exemplo:
+                    <br><br>
+                    &ltmeta charset="utf-8" /&gt preferido em HTML 5.
+                    <br>
+                    &ltmeta charset="ISO-8859-1" /&gt preferido em HTML 4.
+                    <br><br>
+                    Especifica palavras chaves
+                    <br>
+                    &ltmeta name="keywords" content="ia, objetos, classes" /&gt
+                    <br><br>
+                    Descrição do conteúdo
+                    <br>
+                    &ltmeta name="description" content="exemplo da aula 2" /&gt
+                </p>
+                <h4>&ltbody&gt</h4>
+                <p>
+                    Serve para iniciar o corpo do site, é aonde estará todo o conteúdo de fato de um website.
+                </p>
+                <h4>&ltbr&gt</h4>
+                <p>
+                    Serve para quebrar uma linha.
+                </p>
+                <h4>&lthr&gt</h4>
+                <p>
+                    Serve para quebrar uma linha e colocar uma linha divisória.
+                </p>
+                <h4>&lth1&gt, &lth2&gt...</h4>
+                <p>
+                    Serve para indicar um título no documento, e ele vai até 6, h1, h2, h3, h4, h5, h6 onde o primeiro define uma importância maior. 
+                </p>
+                <h4>&ltdiv&gt</h4>
+                <p>
+                    Serve para indicar um espaçamento genérico, que pode ser utilizado de diversas formas. 
+                </p>
+                <h4>&lt!-- ... --&gt</h4>
+                <p>
+                    Serve para inserir um comentário dentro do código HTML, que não será visível quando o navegador processar o documento.
+                </p>
+            </p>                        
         </p>
     </body>
 </html>
