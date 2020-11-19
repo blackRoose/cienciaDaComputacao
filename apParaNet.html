@@ -198,6 +198,24 @@
                 <br><br>
                 Todo código HTML pode ser válidado pelo W3C no link:  https://validator.w3.org/
             </p>
+            <h3>Pontos importantes no HTML</h3>
+            <h4>Referências Absolutas</h4>
+            <p>
+                Refências absolutas são aqueles caminhos, que se passa as TAG com o atributo src="", aonde é passado a URL de algum domínio.
+                <br>Por exemplo: src="http://meusite.com/img/selfie.png"
+            </p>
+            <h4>Referências Relativas</h4>
+            <p>
+                Refências relativas são caminhos locais, do próprio computador ou do documento inteiro, algo como:
+                <br>src="imagem1.png" ou até mesmo src="img/imagem1.png", na mesma pasta ou fora da do arquivo HTML.
+            </p>
+            <h3>Exercícios das aulas</h3>
+            <h4>Semana 2 (Segunda aula)</h4>
+            <p>
+                Nesse exercício foi proposto para fazer um documento HTML simples, aonde conterá dois links; Um que levará para outro exercício<br>
+                envolvendo tabelas e outro envolvendo inserção de imagens.
+            </p>
+            <a href="exercicios/Semana2/exercicio1Aula2.html">Primeiro exercício</a>
             <h3>TAG e suas funções</h3>
             <p>
                 <h4>&lt!DOCTYPE html&gt</h4>
@@ -257,6 +275,92 @@
                 <h4>&lt!-- ... --&gt</h4>
                 <p>
                     Serve para inserir um comentário dentro do código HTML, que não será visível quando o navegador processar o documento.
+                </p>
+                <h4>&ltem&gt</h4>
+                <p>
+                    Serve para dar ênfase em um texto.
+                </p>
+                <h4>&ltstrong&gt</h4>
+                <p>
+                    Deixa o texto em negrito, definindo como importante semânticamente.
+                </p>
+                <h4>&ltcode&gt</h4>
+                <p>
+                    Defina algum texto como código de computador em um documento.
+                </p>
+                <h4>&ltsamp&gt</h4>
+                <p>
+                    Define algum texto como saída de amostra de um programa de computador em um documento.
+                    <br>Como exemplo "aperte F1 para continuar".
+                </p>
+                <h4>&ltkbd&gt</h4>
+                <p>
+                    Define algum texto como saída de amostra de um programa de computador em um documento.
+                    <br>Como exemplo "aperte CTRL + C e CMD + C".
+                </p>
+                <h4>&ltvar&gt</h4>
+                <p>
+                    Define uma variável no texto. Como por exemplo de matemática: 1/2 x &ltvar&gtb&ltvar&gt x &ltvar&gta&ltvar&gt.
+                    <br>que teria o resultado: 1/2 x b x a, mas com um sentido no navegaor, o "a" e o "b" seriam variáveis.
+                </p>
+                <h4>&ltmark&gt</h4>
+                <p>
+                    Marca um texto, igual quando se é marcado um texto com as canetas marca texto.
+                </p>
+                <h4>&ltdel&gt</h4>
+                <p>
+                    Deleta um texto marcando ele com um traço riscado.
+                </p>
+                <h4>&ltins&gt</h4>
+                <p>
+                    Define um texto inserido com um undeline embaixo do texto marcado.
+                </p>
+                <h4>&ltimg&gt</h4>
+                <p>
+                    É uma TAG para inserir uma imagem ao documento HTML, normalmente é utilizado com o atributo src="" e outras.
+                </p>
+                <h4>&ltfigure&gt</h4>
+                <p>
+                    É uma TAG usada em conjunto com outra TAG, a &ltimg&gt. Para adicionar uma legenda a imagem.
+                </p>
+                <h4>&ltol&gt e &ltul&gt</h4>
+                <p>
+                    São TAG para fazer listas no documento HTML, a &ltol&gt é utilizada para fazer uma lista ordena, seja alfabeticamente ou numeral.
+                    <br>
+                    Já a TAG &ltul&gt é para fazer uma lista não ordenada, normalmente precedida por algum simbolo como asterisco, ponto, etc.
+                </p>
+                <h4>&ltli&gt</h4>
+                <p>
+                    É uma TAG usada em conjunto com outras TAG, as &ltol&gt e &ltul&gt, junto com essas TAG ela será utilizada para criar os itens da lista.
+                </p>
+                <h4>&lttable&gt</h4>
+                <p>
+                    Define o inicio de uma tabela.
+                </p>
+                <h4>&lttr&gt e &lttd&gt</h4>
+                <p>
+                    São TAG que será usada dentro da tag &lttable&gt. A &lttr&gt será considerada uma linha e a &lttd&gt uma coluna da tabela.
+                </p>
+                <h4>&ltthead&gt</h4>
+                <p>
+                    Usada em conjunto com a TAG &lttable&gt, será semanticamente considerado o cabeçalho da tabela.
+                </p>
+                <h4>&ltth&gt</h4>
+                <p>
+                    Usada em conjunto com as TAG &lttable&gt e &ltthead&gt, servirá para determinar as colunas do cabeçalho.
+                </p>
+                <h4>&lttfoot&gt</h4>
+                <p>
+                    Usada em conjunto com a TAG &lttable&gt, será semanticamente considerado o corpo (espaço para o conteúdo) da tabela.
+                </p>
+                <h4>&lttfoot&gt</h4>
+                <p>
+                    Usada em conjunto com a TAG &lttable&gt, será semanticamente considerado o rodapé (última linha) da tabela.
+                </p>
+                <h4>&lta&gt</h4>
+                <p>
+                    Usada para criar links dentro do documento HTML, onde utiliza-se o atributo href="caminho" passando o caminho de acesso, seja ele local
+                    <br> ou de fora. 
                 </p>
             </p>                        
         </p>
