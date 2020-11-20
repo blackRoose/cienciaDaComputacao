@@ -216,6 +216,11 @@
                 envolvendo tabelas e outro envolvendo inserção de imagens.
             </p>
             <a href="exercicios/Semana2/exercicio1Aula2.html">Primeiro exercício</a>
+            <h4>Semana 3 (Terceira aula)</h4>
+            <p>
+                bla bla...
+            </p>
+            <a href="exercicios/Semana3/exercicio1Aula3.html">Primeiro exercício</a>
             <h3>TAG e suas funções</h3>
             <p>
                 <h4>&lt!DOCTYPE html&gt</h4>
@@ -361,6 +366,89 @@
                 <p>
                     Usada para criar links dentro do documento HTML, onde utiliza-se o atributo href="caminho" passando o caminho de acesso, seja ele local
                     <br> ou de fora. 
+                </p>
+                <h4>&ltaudio&gt</h4>
+                <p>
+                    Usada para inserir áudios dentro do arquivo HTML. Utiliza-se o atributo src="" para colocar o caminho do arquivo.
+                </p>
+                <h4>&ltvideo&gt</h4>
+                <p>
+                    Usada para inserir vídeos dentro do arquivo HTML. Utiliza-se o atributo src="" para colocar o caminho do arquivo.
+                </p>
+                <h4>&ltsource&gt</h4>
+                <p>
+                    Usada para inserir áudios e vídeos dentro do arquivo HTML em conjunto com a TAG &ltaudio&gt e &ltvideo&gt, a TAG possibilita a inserção<br>
+                     de áudios e vídeos de outro tipo além do MP3 e MP4. Utiliza-se os atributos src="" e type="" para localizar e especificar o tipo do arquivo.
+                </p>
+                <h4>&ltiframe&gt</h4>
+                <p>
+                    Utilizada para incorporar janelas a ná página HTML, seja conteudo externo ou outros conteúdos html. Utiliza-se o atributo src="".
+                </p>
+                <h4>&ltembed&gt e &ltobject&gt</h4>
+                <p>
+                    Essas tags incorporam um conteúdo externo as páginas, geralmente estão associados a plug-ins, como Applets, Flash etc. 
+                    <br>Para TAG &ltembed&gt utiliza-se o atributo data="" e para TAG &ltobject&gt utiliza-se a TAG src="" para localizar o arquivo.
+                </p>
+                <h4>&ltcanvas&gt</h4>
+                <p>
+                    A tag canvas é utilizada para desenhar imagens dinâmicas através de programação com JavaScript. <br>
+                    Com a tag canvas e o JavaScript gráficos, jogos, animações, etc.
+                </p>
+                <h4>&ltform&gt</h4>
+                <p>
+                    Utilizada para criar formulários no arquivo HTML. Utiliza-se os atributos name="", method="" e action="", para nomear, para mudar<br>
+                    a forma como os parametros serão passados no cabeçalho da requisição e para declarar o endereço da página ou servidor, nesta ordem.
+                    <h4>Formulários no HTML</h4>
+                    <p>
+                        Formulários em HTML são campos que servirão para ser preenchidos por informações que posteriormente serão enviadas ao servidor<br>
+                        para ser armazenadas.<br>
+                        Há alguns atributos importantes e necessários para o preenchimento dos formulários, como por exemplo o required="required", que<br>
+                        obrigará o usuário a preencher o campo de entrada.<br>
+                        Há também o atributo autofocus="autofocus" que servirá para dar foco a uma entrada quando carregar a página.<br>
+                        Há também o atributo placeholder="Informação a ser passada" que serve para dar uma dica do que deverá ser digitado no campo.<br>
+                    </p>
+                </p>
+                <h4>&ltinput&gt, &ltdatalist&gt e &ltoption&gt</h4>
+                <p>
+                    É utilizada para dar a entrada de dados no formulário em conjunto com a TAG &ltform&gt. Normalmente utilizada com o atributo type="" para <br>
+                    determinar o tipo de dado que será armazenado.<br>
+                    E em relação aos tipos, há diversos para cada tipo, sendo eles o tipo:<br>
+                    <strong>text:</strong> que serve para dar entrada de texto simples;<br>
+                    <strong>password:</strong> que serve para dar entrada de senhas, normalmente oculta a informação no input;<br>
+                    <strong>email:</strong> que serve para dar entradar de texto do tipo e-mail, contendo normalmente o @;<br>
+                    <strong>url:</strong> que serve para validar URLs;<br>
+                    <strong>submit:</strong> que serve para enviar as informações contidas nos inputs ao servidor;<br>
+                    <strong>hidden:</strong> que oculta o campo;<br>
+                    <strong>checkbox:</strong> que da opção ao usuário de marcar mais de uma opção, apresenta uns botões para selecionar;<br>
+                    <strong>button:</strong> que serve para fazer chamadas de funções em Javascript;<br>
+                    <strong>file:</strong> que serve para carregar arquivos do PC ao formulário;<br>
+                    <strong>image:</strong> que serve para definir um botão com imagem para enviar ao formulário;<br>
+                    <strong>radio:</strong> que serve para dar ao usuário marcar apenas uma opção, apresenta uns botões para selecionar, mas aceita apenas uma seleção;<br>
+                    <br>
+                    É possível também realizar uma lista de opções a ser selecionadas, utilizando o atributo list="" em conjunto da TAG &ltdatalist&gt.<br>
+                    As TAG &ltinput&gt e &ltdatalist&gt precisarão ainda da TAG &ltoption&gt, que servirá para declarar as opções da lista, dependendo claro<br>
+                    do seu tipo de conteúdo, onde serão passados através do atributo value="" da TAG &ltoption&gt, neste caso a TAG será do tipo único, sem fechamento.
+                </p>
+                <h4>&ltlabel&gt</h4>
+                <p>
+                    Utilizada em conjunto com as TAG &ltform&gt e &ltinput&gt serve para relacionar uma entrada (input) a um rótulo. <br>
+                    Normalmente utilizada com o atributo for="" que fará referência ao atributo id="" em uma TAG &ltinput&gt. <br> 
+                </p>
+                <h4>&ltfieldset&gt e &ltlegend&gt</h4>
+                <p>
+                    Utilizada em conjunto com as TAG &ltform&gt e &ltinput&gt servem para agrupar elementos e itens do formulário, possibilitando <br>
+                    dar até uma legenda sobre os conteúdos ali presentes. &ltfieldset&gt agrupa e &ltlegend&gt permite a legenda.
+                </p>
+                <h4>&ltselect&gt e &ltoptgroup&gt</h4>
+                <p>
+                    Utilizada em conjunto com as TAG &ltform&gt serve para criar uma lista de opções do tipo combobox que mostra uma cascata.<br>
+                    É utilizada com a TAG &ltoption&gt com TAG fechada. Sendo possível dar um título ao tipo de informação com a TAG &ltoptgroup&gt e <br>
+                    o atributo label="".
+                </p>
+                <h4>&lttextarea&gt</h4>
+                <p>
+                    Utilizada em conjunto com as TAG &ltform&gt para criar um campo de texto de várias linhas.<br>
+                    Utiliza-se os atributos rows="" e cols="" para determinar o tamanho e a quantidade de linhas.
                 </p>
             </p>                        
         </p>
