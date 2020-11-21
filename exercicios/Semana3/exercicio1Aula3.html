@@ -5,6 +5,58 @@
         <meta charset="utf-8">
     </head>
     <body>
-        
+        <form>
+            <label for="nome">1) Nome do paciente
+                <input type="text" name="nome" id="nome">
+            </label>
+            <br><br>
+            <label for="registro">2) Registro Hospitalar 
+                <input type="text" name="registro" id="registro">
+            </label>
+            <br><br>
+            <label for="dataInclusao">3) Data de inclusão 
+                <input type="text" name="dataInclusao" id="dataInclusao">
+            </label>
+            <br><br>
+            <label for="dataNascimento">4) Data de nascimento 
+                <input type="text" name="dataNascimento" id="dataNascimento">
+            </label>
+            <br><br>
+            <label for="email">5) E-mail
+                <input type="email" name="email" id="email">
+            </label>
+            <br><br>
+            <label for="sexo">6) Sexo
+                <input type="radio" name="sexo" id="feminino" value="Feminino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="sexo" id="masculino" value="Masculino">
+                <label for="masculino">Masculino</label>
+            </label>
+            <br><br>
+            <label for="raca">7) Raça declarada
+                <select id="raca">
+                    <option value="branca">Branca</option>
+                    <option value="negra">Negra</option>
+                    <option value="parda">Parda</option>
+                    <option value="amarela">Amarela</option>
+                    <option value="indigena">Indígena</option>
+                    <option value="desconhecida">Desconhecida</option>
+                </select>
+            </label>
+            <br /><br />
+            <label for="pesquisa">8) Como ficou sabendo do estudo? 
+                <input type="checkbox" name="resposta" id="convidado" value="convidado">
+                <label for="convidado">Convidado</label>
+                <input type="checkbox" name="resposta" id="internet" value="internet">
+                <label for="internet">Internet</label>
+                <input type="checkbox" name="resposta" id="amigos" value="amigos">
+                <label for="amigos">Amigos</label>
+                <input type="checkbox" name="resposta" id="familiares" value="familiares">
+                <label for="familiares">Familiares</label>
+                <input type="checkbox" name="resposta" id="outros" value="outros">
+                <label for="outros">Outros</label>
+            </label>
+            <br><br>
+        </form>
     </body>
 </html>
